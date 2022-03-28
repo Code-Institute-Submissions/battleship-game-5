@@ -33,6 +33,14 @@ def print_board(board, name):
     for row in board:
         print " ".join(row)
 
+# create a function name random_num and parameter 'board' 
+def random_num(board):
+    return randint(0, len(board) - 1)
+
+# create two variable computer_ship_row and computer_ship_col for computer board
+computer_ship_row = random_num(computer_board)
+computer_ship_col = random_num(computer_board)
+
 
 
 
