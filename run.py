@@ -41,6 +41,23 @@ def random_num(board):
 computer_ship_row = random_num(computer_board)
 computer_ship_col = random_num(computer_board)
 
+# create two variable user_ship_row and user_ship_col for user board
+user_ship_row = random_num(user_board)
+user_ship_col = random_num(user_board)
 
+user_board[user_ship_row] [user_ship_col] = "@"
+
+# print user_board and computer_board and there name
+print_board(user_board, user_name)
+print_board(computer_board, computer_name)
+
+# create a function take_input_and_play_game
+def take_input_and_play_game():
+    global user_guess_row, user_guess_col, computer_guess_row, computer_guess_col
+    user_guess_row = int(raw_input("Guess a row: "))
+    user_guess_col = int(raw_input("Guess a col: "))
+    computer_guess_row = random_num(computer_board)
+    computer_guess_col = random_num(computer_board)
+    play_game()
 
 
