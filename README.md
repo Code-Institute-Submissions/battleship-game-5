@@ -1,31 +1,52 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Battleship Game
+Ultimate Battleship is a python terminal game. Which run on Heroku site.
 
-Welcome Yakub Ali,
+User can try to beat the the computer by find the computer battleship before the computer find there.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+Here is the screen of my project
 
-## Reminders
+![Different Screen size][]
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## How to play
+Battleship game is based on the classic pen and papper game. If you want to learn more about battleship please visit Wikipedia site. In this version The player enter there name and two board are rendomly generated. 
+The player can see where there ship are and it's indikated by '@' sign. User can create there grid size colum and row. The computer and the player then take it in turns to make guesses and try to sink each other battleship.
 
-## Creating the Heroku app
+## Features 
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+### Existing Features
+    - Random board generated
+    - ships a placed rendomly on both the player and computer board
+    - player cannot see where the computer's ships are
 
-1. `heroku/python`
-2. `heroku/nodejs`
+![main page][] 
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+### Future Fuature 
+- Player can select grid size and ships number
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Data Model 
 
-Connect your GitHub repository and deploy as normal.
 
-## Constraints
+## Testing
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Bugs
+#### Solving Bug
 
------
-Happy coding!
+## Remaining Bugs 
+
+## Validator Testing
+pep8online.com
+
+
+## Deployment
+This project was deployed using Code Institute's mock terminal Heroku
+
+ - Create a new Heroku app
+ - Set the buildbacks to python and NodeJS in the order
+ - Link the Heroku app to the repositoty
+ - click to diploy
+
+## Credit
+
+- Wikipedia for the details of the Battleships game
+- Code Institute for the deployment terminal
+- W3School   

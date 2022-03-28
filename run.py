@@ -23,7 +23,7 @@ for x in range(grid_size):
 
 
 def print_board(board, name):
-    print ("-------------------------------")
+    print("-------------------------------")
     print (name + "'s board")
     for row in board:
         print (" ".join(row))
@@ -73,6 +73,6 @@ def show_result():
     if computer_guess_row == computer_ship_row and computer_guess_col == computer_ship_col:
         print ("Congratulations!" + "computer win")
     else:
-        print "Computer missed this time."
+        print("Computer missed this time.")
 
 take_input_and_play_game()
