@@ -51,7 +51,7 @@ print_board(computer_board, computer_name)
 
 def take_input_and_play_game():
     global user_guess_row
-    global user_guess_col 
+    global user_guess_col
     global com_guess_row
     global com_guess_col
 
@@ -63,7 +63,7 @@ def take_input_and_play_game():
 
 
 def play_game():
-    if ((user_guess_row < 0 or user_guess_row > grid_size) or 
+    if ((user_guess_row < 0 or user_guess_row > grid_size) or
             (user_guess_col < 0 or user_guess_col > grid_size)):
         print("Oops, that's not even in the ocean. Guess again:")
         take_input_and_play_game()
@@ -74,17 +74,16 @@ def play_game():
 def show_result():
     my_guess = str(user_guess_row) + "," + str(user_guess_col)
     print("Player guessed: (" + my_guess + ")")
-    if (user_guess_row == com_ship_row and 
+    if (user_guess_row == com_ship_row and
             user_guess_col == com_ship_col):
         print("Congratulations!" + user_name + "win")
     else:
         print(user_name + " missed this time.")
 
         computer_guess = str(com_guess_row) + "," + str(user_guess_col)
-    
         print("Computer guessed: (" + computer_guess + ")")
 
-        if (com_guess_row == com_ship_row and 
+        if (com_guess_row == com_ship_row and
                 com_guess_col == com_ship_col):
             print("Congratulations! computer win")
         else:
