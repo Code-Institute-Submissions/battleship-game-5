@@ -60,4 +60,30 @@ def take_input_and_play_game():
     computer_guess_col = random_num(computer_board)
     play_game()
 
+# controll grid size by if condition in function
+def play_game():
+    if(user_guess_row < 0 or user_guess_row > grid_size) or (user_guess_col < 0 or user_guess_col > grid_size)
+        print "Sorry, That's not even in the ocean. Guess again: "
+        take_input_and_play_game()
+    else:
+        show_result()
+
+# define a function show_result() and user can guess and computer can guess
+def show_result():
+    print " Player guessed: (" + str(user_guess_row) + "," + str(user_guess_col) + ") "
+    if user_guess_row == computer_ship_row and user_guess_col == computer_ship_col:
+        print "Congratulations!" + user_name + " ** Win ** "
+    else:
+        print user_name + " missed this time."
+
+    print " Computer guessed: (" + str(computer_guess_row) + "," + str(user_guess_col) + ") "
+    if computer_guess_row == computer_ship_row and computer_guess_col == computer_ship_col:
+        print "Congratulations!" + "Computer Win"
+    else:
+        print "Computer missed this time."
+
+    take_input_and_play_game()
+
+
+
 
